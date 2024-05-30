@@ -7,4 +7,46 @@
 6 animare le altre 2 parole
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
-
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+main {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+#testoAlternato {
+  border: 2px solid black;
+  padding: 0.5rem;
+  width: 500px;
+  line-height: 2rem;
+  overflow: hidden;
+}
+#testoAlternato p {
+  display: flex;
+}
+span {
+  display: inline-block;
+  transform: translate(-60px, 65px);
+  height: 30px;
+  overflow: hidden;
+}
+.parole i {
+  color: red;
+  display: block;
+}
+@keyframes mostraParole {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, -32px);
+  }
+  100% {
+    transform: translate(0, -65px);
+  }
+}
+.parole i {
+  animation: mostraParole 4s alternate infinite;
+}

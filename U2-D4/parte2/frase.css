@@ -31,6 +31,7 @@ span {
   transform: translate(-60px, 65px);
   height: 30px;
   overflow: hidden;
+  line-height: 2.5rem;
 }
 .parole i {
   color: red;
@@ -38,13 +39,19 @@ span {
 }
 @keyframes mostraParole {
   0% {
-    transform: translate(0, 0px);
+    transform: translate(0, 14px);
+  }
+  15% {
+    transform: translate(0, -5px);
   }
   50% {
-    transform: translate(0, -32px);
+    transform: translate(0, -45px);
+  }
+  85% {
+    transform: translate(0, -85px);
   }
   100% {
-    transform: translate(0, -65px);
+    transform: translate(0, -110px);
   }
 }
 .parole i {

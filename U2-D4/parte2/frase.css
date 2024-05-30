@@ -48,5 +48,5 @@ span {
   }
 }
 .parole i {
-  animation: mostraParole 4s alternate infinite;
+  animation: mostraParole 4s infinite;
 }
